@@ -1,0 +1,10 @@
+# 080888.com — Jekyll config (GitHub Pages builds this automatically; no plugins needed)
+title: "080888 — Lucky Numbers Lab"
+url: "https://080888.com"
+version: "202609290427"   # bump to bust CSS/JS caches after edits
+exclude:
+  - README.md
+  - RESEARCH.md
+  - BUILD-PROMPT.md
+  - tools
+  - src
