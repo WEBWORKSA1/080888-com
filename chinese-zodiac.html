@@ -1,0 +1,52 @@
+---
+layout: "default"
+title: "Chinese Zodiac Calculator, Lucky Numbers by Sign & Compatibility Checker"
+description: "Find your Chinese zodiac animal and element from your exact birth date (Lunar New Year boundary handled), your personal lucky numbers, and compatibility between any two signs."
+canonical: "https://080888.com/chinese-zodiac.html"
+jsonld: "{\"@context\": \"https://schema.org\", \"@graph\": [{\"@type\": \"WebSite\", \"name\": \"080888\", \"url\": \"https://080888.com/\", \"potentialAction\": {\"@type\": \"SearchAction\", \"target\": \"https://080888.com/lucky-number-analyzer.html?n={n}\", \"query-input\": \"required name=n\"}}, {\"@type\": \"WebPage\", \"name\": \"Chinese Zodiac Calculator, Lucky Numbers by Sign & Compatibility Checker\", \"description\": \"Find your Chinese zodiac animal and element from your exact birth date (Lunar New Year boundary handled), your personal lucky numbers, and compatibility between any two signs.\", \"url\": \"https://080888.com/chinese-zodiac.html\", \"dateModified\": \"2026-09-29\"}, {\"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Why does my zodiac depend on Chinese New Year?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"The zodiac year starts on Lunar New Year, which falls between 21 January and 20 February. If you were born in January or early February, you may belong to the previous year's animal.\"}}, {\"@type\": \"Question\", \"name\": \"What are the best zodiac matches?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"The Six Harmonies: Rat–Ox, Tiger–Pig, Rabbit–Dog, Dragon–Rooster, Snake–Monkey, Horse–Goat. The four trines (e.g. Rat–Dragon–Monkey) are also strong.\"}}]}]}"
+---
+<div class="wrap crumbs" style="padding-top:12px"><a href="index.html">Home</a> › Chinese Zodiac</div>
+<section class="page-hero"><div class="wrap">
+  <span class="eyebrow">十二生肖 · 12 animals</span>
+  <h1>Chinese zodiac: your animal, element & lucky numbers</h1>
+  <p class="lead">Enter your full birth date. We use the lunar calendar, so January and February birthdays get the right animal. You'll also see your element, yin/yang and personal lucky numbers.</p>
+</div></section>
+
+<section class="block" style="padding-top:30px"><div class="wrap">
+  <div class="grid g2">
+    <div class="tool">
+      <h2 class="mt0" style="font-size:1.5rem">Find my sign</h2>
+      <form data-zodiac="#z-out"><label for="z-d">Date of birth</label><input id="z-d" type="date" required min="1900-01-01" max="2100-12-31"><button class="btn btn-primary btn-block mt2" type="submit">Reveal my zodiac</button></form>
+    </div>
+    <div class="tool">
+      <h2 class="mt0" style="font-size:1.5rem">Compatibility checker</h2>
+      <form data-compat="#cp-out"><div class="row2"><div class="field"><label for="cp-a">Sign A</label><select id="cp-a" data-animals></select></div><div class="field"><label for="cp-b">Sign B</label><select id="cp-b" data-animals></select></div></div><button class="btn btn-gold btn-block" type="submit">Check match</button></form>
+    </div>
+  </div>
+  <div class="result tool mt2" id="z-out" aria-live="polite"></div>
+  <div class="result tool mt2" id="cp-out" aria-live="polite"></div>
+  <div class="ad" data-slot="top"></div>
+
+  <h2 class="center mt2">The 12 signs and their lucky numbers</h2>
+  <div class="table-wrap"><table><thead><tr><th>Animal</th><th>Recent years</th><th>Traits</th><th>Lucky numbers</th><th>Best matches</th></tr></thead><tbody>
+    <tr><td>🐀 Rat 鼠</td><td>1984, 1996, 2008, 2020, 2032</td><td>Quick-witted, resourceful</td><td>2, 3</td><td>Ox, Dragon, Monkey</td></tr>
+    <tr><td>🐂 Ox 牛</td><td>1985, 1997, 2009, 2021, 2033</td><td>Diligent, dependable</td><td>1, 4</td><td>Rat, Snake, Rooster</td></tr>
+    <tr><td>🐅 Tiger 虎</td><td>1986, 1998, 2010, 2022, 2034</td><td>Brave, confident</td><td>1, 3, 4</td><td>Pig, Horse, Dog</td></tr>
+    <tr><td>🐇 Rabbit 兔</td><td>1987, 1999, 2011, 2023, 2035</td><td>Gentle, elegant</td><td>3, 4, 6</td><td>Dog, Goat, Pig</td></tr>
+    <tr><td>🐉 Dragon 龙</td><td>1988, 2000, 2012, 2024, 2036</td><td>Ambitious, charismatic</td><td>1, 6, 7</td><td>Rooster, Rat, Monkey</td></tr>
+    <tr><td>🐍 Snake 蛇</td><td>1989, 2001, 2013, 2025, 2037</td><td>Wise, intuitive</td><td>2, 8, 9</td><td>Monkey, Ox, Rooster</td></tr>
+    <tr><td>🐎 Horse 马</td><td>1990, 2002, 2014, 2026, 2038</td><td>Energetic, independent</td><td>2, 3, 7</td><td>Goat, Tiger, Dog</td></tr>
+    <tr><td>🐐 Goat 羊</td><td>1991, 2003, 2015, 2027, 2039</td><td>Calm, creative</td><td>3, 4, 9</td><td>Horse, Rabbit, Pig</td></tr>
+    <tr><td>🐒 Monkey 猴</td><td>1992, 2004, 2016, 2028, 2040</td><td>Clever, inventive</td><td>1, 7, 8</td><td>Snake, Rat, Dragon</td></tr>
+    <tr><td>🐓 Rooster 鸡</td><td>1993, 2005, 2017, 2029, 2041</td><td>Observant, precise</td><td>5, 7, 8</td><td>Dragon, Ox, Snake</td></tr>
+    <tr><td>🐕 Dog 狗</td><td>1994, 2006, 2018, 2030, 2042</td><td>Loyal, honest</td><td>3, 4, 9</td><td>Rabbit, Tiger, Horse</td></tr>
+    <tr><td>🐖 Pig 猪</td><td>1995, 2007, 2019, 2031, 2043</td><td>Generous, sincere</td><td>2, 5, 8</td><td>Tiger, Rabbit, Goat</td></tr>
+  </tbody></table></div>
+  <p class="muted" style="font-size:.9rem">Years start on Lunar New Year, not 1 January. Lucky-number lists vary between traditions; these are the most widely published. Element numbers follow the He Tu (河图) pairing: Water 1/6, Fire 2/7, Wood 3/8, Metal 4/9, Earth 5/0.</p>
+
+  <div class="grid g2 mt2">
+    <div class="card"><h3 class="mt0">The Five Elements (五行)</h3><p>Each year also has an element (Wood, Fire, Earth, Metal, Water), set by the last digit of the lunar year. The 12 animals and 5 elements combine into a 60-year cycle. 2026 is a Fire Horse year; 2027 is a Fire Goat year.</p></div>
+    <div class="card"><h3 class="mt0">The Great Race legend</h3><p>In the classic story, the Jade Emperor held a race across a river. The clever Rat rode on the Ox's back and jumped ahead to finish first. That's why the zodiac starts with Rat, then Ox, and ends with the slow-but-happy Pig.</p></div>
+  </div>
+  <div class="grid g3 mt2" data-videos="zodiac" data-limit="3"></div>
+</div></section>
